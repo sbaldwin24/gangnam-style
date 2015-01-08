@@ -196,9 +196,8 @@ Polymer('x-gangnam-style', {
       a.pause();
     });
     this.shadowRoot.addEventListener('webkitTransitionEnd', function(e) {
-     if (e.propertyName == 'height' &&
-         parseInt(window.getComputedStyle(e.target).height) < 10) {
-       a.load();
+     if (e.propertyName == 'height' && parseInt(window.getComputedStyle(e.target).height) < 10) {
+        a.load();
      }
     });
   }
